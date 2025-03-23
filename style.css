@@ -25,7 +25,7 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
-.header {
+header {
     background: linear-gradient(to right, #e91e63, #9c27b0); /* Gradien header */
     color: white;
     text-align: center;
@@ -33,18 +33,18 @@ body {
     position: relative;
 }
 
-.header h1 {
+header h1 {
     margin: 0;
     font-size: 2.5em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.content {
+main {
     padding: 40px;
     text-align: center;
 }
 
-.foto {
+img.foto {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -54,17 +54,17 @@ body {
     transition: transform 0.3s ease-in-out; /* Animasi hover */
 }
 
-.foto:hover {
+img.foto:hover {
     transform: scale(1.05);
 }
 
-.content p {
+main p {
     line-height: 1.6;
     margin-bottom: 20px;
     font-size: 1.1em;
 }
 
-.footer {
+footer {
     background-color: rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 20px;
@@ -72,7 +72,7 @@ body {
 }
 
 /* Tambahan untuk efek hati */
-.header::after {
+header::after {
     content: '♥';
     position: absolute;
     bottom: 10px;
@@ -80,3 +80,4 @@ body {
     transform: translateX(-50%);
     font-size: 2em;
     color: white;
+    animation: heartbeat 1.5s
